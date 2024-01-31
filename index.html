@@ -13,6 +13,8 @@
   <body>
 
     <div class="top-container">
+      <!-- Dark Mode Toggle Button -->
+      <button id="darkModeToggle">Dark</button>
       <img class="upper-cld" src="images/cloud.svg" alt="cloud" />
       <h1 class="text">I'm Aryan.</h1>
       <h4 class="text">a <span class="pro">programmer.</span></h4>
@@ -24,7 +26,7 @@
         <div class="profile">
           <img class="circular" src="images/aryan.png.png" width="18%" alt="aryan">
           <h2>Hello.</h2>
-          <p class="intro">I absolutely ❤️ problem solving with programming, where I can unleash my creativity and logic to conquer challenges and create innovative solutions.</p>
+          <p class="intro">Meet Aryan Jain, a coding enthusiast driven by a passion for problem-solving. Through the exploration of full-stack skills, I've discovered the ability to not only address challenges but also create practical and visually appealing web projects.</p>
     </div>
         <hr class="hr">
         <div class="skills">
@@ -33,27 +35,27 @@
             <img class="code1" src="images/skills.gif" width="30%" alt="code-img">
     
             <h3 class="myskills">Design &amp; Development</h3>
-            <p>I started learning to code when I was 12 years old because I wanted to make my own video games. Over time, I have gained a wealth of experience designing and developing mobile and web applications.</p>
+            <p>I love designing website flows and creating efficient code blocks. Crafting seamless user experiences and solving complex problems through code brings me immense joy.</p>
 
-           
+             
     
           </div>
           <div class="skill-row2">
             <img class="code2" src="images/skills2.gif" width="30%" alt="code">
     
             <h3 class="myskills">Coding challenges</h3>
-            <p> Bus Reservation System is a C++ project that allows users to manage bus reservations.
-            It provides functions to add bus details, reserve seats, and display reservation information.
-            The project utilizes object-oriented programming and data structures to facilitate efficient bus management.</p>
+            <p> 
+              In a single project, I utilized PHP to design the backend, enabling seamless interaction with SQL databases for efficient data storage and retrieval. To analyze the sales data, I integrated Power BI, creating visually compelling reports and dashboards for actionable insights. This project showcases my ability to deliver a comprehensive and effective data analytics solution..</p>
           </div>
         </div>
         <hr class="hr">
         <div class="contact-me">
           <h2>Get In Touch</h2>
-          <h3>If you love Brain Storming as much as I do.</h3>
+          <h3>If you ❤️ Brain Storming as much as I do.</h3>
           <p class="contact-message">
 Brainstorming in programming is a collaborative process of generating and sharing ideas to solve programming problems or develop software solutions. It fosters creativity, encourages diverse perspectives, and helps programmers explore different approaches and solutions before implementation.</p>
-          <a class="btn" href="mailto:aryan07jain@gmail.com">CONTACT ME</a>
+            <a id="contactButton" class="btn" href="#" onclick="openContactModal()">CONTACT ME</a>
+
         </div>
       </div>
     
@@ -63,6 +65,20 @@ Brainstorming in programming is a collaborative process of generating and sharin
         <a class="footer-link" href="https://www.instagram.com/_aryanjain_21/">Instagram</a>
         <p class="copyright">© 2023 Aryan Jain@developer</p>
     </div>
+    <!-- Add this modal at the end of your HTML body -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeContactModal()">&times;</span>
+    <h2>Contact Details</h2>
+    <form id="contactForm" action="process_form.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+</div>
 
+    <script src="script.js"></script>
   </body>
 </html>

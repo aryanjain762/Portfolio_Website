@@ -39,6 +39,35 @@ a:hover{
     color: #ffffff;
     font-size: larger;
 }
+#darkModeToggle {
+    background-color: #609EA2; /* Background color for the button */
+    color: #cef7df;
+    border: none;
+    border-radius: 100%; /* Make the button circular */
+    padding: 5px; /* Adjust padding to control button size */
+    cursor: pointer;
+    font-size: 12px; /* Adjust font size */
+    position: absolute; /* Position the button absolutely within the top container */
+    top: 10px; /* Adjust top value to move the button upward */
+    right: 30px; /* Adjust left value to move the button to the left */
+}
+
+#darkModeToggle:hover {
+    background-color: #154432;
+}
+
+.top-container {
+    position: relative; /* Ensure the button is positioned relative to the top container */
+}
+body.dark-mode {
+    background-color: #233b29;
+    color: #ffffff;
+}
+
+.top-container.dark-mode {
+    background-color: #051d17; /* Dark greenish-gray color for the top container */
+    color: #ffffff; /* Text color in the top container in dark mode */
+}
 .circular{
     border-radius: 7%;
     margin: 20px;
@@ -114,6 +143,41 @@ a:hover{
 .myskills{
     color: #599597;
 }
+/* Add this style for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
 .btn {
     background: #609EA2;
     background-image: -webkit-linear-gradient(top, #609EA2, #7DB9B6);
